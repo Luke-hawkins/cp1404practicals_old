@@ -19,7 +19,7 @@ Yes, you could error check to make sure the input for the denominator is not zer
 def main():
     try:
         numerator = int(input("Enter the numerator: "))
-        denominator = int(input("Enter the denominator: "))
+        denominator = get_denominator()
         fraction = numerator / denominator
         print(fraction)
     except ValueError:
@@ -27,6 +27,15 @@ def main():
     except ZeroDivisionError:
         print("Cannot divide by zero!")
     print("Finished.")
+
+
+def get_denominator():
+    """return users denominator"""
+    denominator = int(input("Enter the denominator: "))
+    while denominator == 0:
+        print("Denominator cannot be zero!")
+        denominator = int(input("Enter the denominator: "))
+    return denominator
 
 
 main()
