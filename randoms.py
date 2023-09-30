@@ -20,5 +20,10 @@ print(random.uniform(2.5, 5.5))  # line 3
 # It couldn't produce 4 as it was not within the range function.
 
 # 3
+# What did you see on line 3?
+# What was the smallest number you could have seen, what was the largest?
 
+# Line three produced a decimal with  up to 16 charters including numbers from 2.5 to 5.5
+# was not restricted to only 1 decimal place
 
+print(random.randint(1, 100))
