@@ -1,5 +1,5 @@
-
 def main():
+    """gets 5 numbers from user to display summary"""
     NUMBER_OF_NUMBERS = 5
     count = 0
     numbers = []
@@ -11,6 +11,7 @@ def main():
 
 
 def numbers_summary(numbers):
+    """prints summary of numbers"""
     from statistics import mean
     print(f"The first number is {numbers[0]}")
     print(f"The last number is {numbers[-1]}")
